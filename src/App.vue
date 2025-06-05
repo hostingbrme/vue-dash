@@ -3,14 +3,22 @@
     <!-- Layout Principal (ex: Cabeçalho, Barra Lateral) -->
     <header>Dashboard NC Host</header>
     <main>
-      <router-view></router-view> <!-- Onde as views serão renderizadas -->
+      <router-view></router-view>
+      <!-- Onde as views serão renderizadas -->
     </main>
     <footer>Rodapé</footer>
   </div>
 </template>
 
 <script setup>
-// Lógica do layout principal, se houver
+import { onMounted } from 'vue'
+import { useDashboardStore } from '@/stores/dashboardStore'
+
+const store = useDashboardStore()
+
+onMounted(() => {
+  store.loadData() // Chama a action para carregar os dados
+})
 </script>
 
 <style>

@@ -240,22 +240,6 @@ export const useDashboardStore = defineStore('dashboard', () => {
     }
   }
 
-  async function saveData() {
-    console.log('saveData action called')
-    isLoading.value = true
-    try {
-      // TODO: Replace with actual fetch to Cloudflare Function/KV to save allRawData.value
-      await new Promise((resolve) => setTimeout(resolve, 500)) // Simulate network delay
-      console.log('Data saved (simulated)')
-      // Optionally: show success message
-    } catch (error) {
-      console.error('Error saving data:', error)
-      alert('Falha ao salvar dados: ' + error.message)
-    } finally {
-      isLoading.value = false
-    }
-  }
-
   // Navigation & UI State
   function setView(viewName, filterCategory = 'ALL') {
     currentView.value = viewName
