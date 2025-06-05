@@ -1,0 +1,12 @@
+name = "vue-dash"
+compatibility_date = "2025-06-01"
+
+[vars]
+
+[[kv_namespaces]]
+binding = "DB_KV"
+id = "1074ad7662614a2f953aaaf4fafca6df"
+
+# Removida ou comentada a seção [miniflare]
+# [miniflare]
+# kv_persist = ".wrangler/state/kv"
