@@ -1,26 +1,25 @@
-<template>
-  <div>
-    <!-- Layout Principal (ex: Cabeçalho, Barra Lateral) -->
-    <header>Dashboard NC Host</header>
-    <main>
-      <router-view></router-view>
-      <!-- Onde as views serão renderizadas -->
-    </main>
-    <footer>Rodapé</footer>
-  </div>
-</template>
-
 <script setup>
 import { onMounted } from 'vue'
+import { RouterView } from 'vue-router'
 import { useDashboardStore } from '@/stores/dashboardStore'
 
 const store = useDashboardStore()
 
 onMounted(() => {
+  console.log('App.vue mounted, calling loadData...') // Log para confirmar a chamada
   store.loadData() // Chama a action para carregar os dados
 })
 </script>
 
-<style>
-/* Estilos globais ou do layout principal */
-</style>
+<template>
+  <!-- Seu template existente com <RouterView /> etc. -->
+  <header>
+    <!-- ... -->
+  </header>
+
+  <RouterView />
+
+  <footer>
+    <!-- ... -->
+  </footer>
+</template>
