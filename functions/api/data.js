@@ -10,7 +10,7 @@ export async function onRequest(context) {
 
   const { request, env } = context
   const kv = env.DB_KV // Acessa o KV através do binding que criamos
-  const DATA_KEY = 'dashboardData' // Chave única onde guardaremos *todo* o array de dados no KV
+  const DATA_KEY = 'dashboard_sections_data' // Chave única onde guardaremos *todo* o array de dados no KV
 
   try {
     if (request.method === 'GET') {
