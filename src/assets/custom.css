@@ -1,0 +1,164 @@
+/* === ESTILOS GLOBAIS E DE CORPO === */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overscroll-behavior-y: none;
+    /* As variáveis de tema e cores de fundo/texto são aplicadas via JS no body ou em #dashboardApp */
+}
+
+/* === LAYOUT PRINCIPAL (SIDEBAR E ÁREA DE CONTEÚDO) === */
+.sidebar {
+    width: 260px;
+}
+.content-area {
+    flex-grow: 1;
+    margin-left: 260px;
+}
+
+/* === ESTILOS DA SIDEBAR === */
+.sidebar-link-active {
+    background-color: #4A5568; /* Cor de fundo para link ativo (Tailwind gray-700) */
+    color: white;
+    font-weight: 600;
+}
+.sidebar ul li a:hover {
+    background-color: #2D3748; /* Cor de fundo no hover (Tailwind gray-800) */
+}
+
+/* === UTILITÁRIOS === */
+.password-hidden {
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+/* === ESTILOS DE SCROLLBAR (Opcional) === */
+main::-webkit-scrollbar { width: 6px; }
+main::-webkit-scrollbar-thumb { background-color: #4A5568; border-radius: 3px; }
+main::-webkit-scrollbar-track { background-color: transparent; }
+
+aside::-webkit-scrollbar { width: 6px; }
+aside::-webkit-scrollbar-thumb { background-color: #4A5568; border-radius: 3px; }
+aside::-webkit-scrollbar-track { background-color: transparent; }
+
+/* === ESTILOS DE MODAL (Adicionar Servidor, Adicionar Site, Detalhes do Site) === */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Levemente mais escuro para melhor contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50; /* Garante que o modal esteja acima de outros conteúdos */
+    transition: opacity 0.3s ease;
+}
+
+.modal-container { /* Usado para o efeito de scale/opacity */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 90%; /* Responsivo para telas menores */
+}
+
+.modal-content { /* O conteúdo real do modal */
+    background-color: var(--card-bg); /* Usa variável de tema para o fundo do modal */
+    padding: 1.5rem; /* Tailwind: p-6 */
+    border-radius: 0.5rem; /* Tailwind: rounded-lg */
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 20px 25px -5px rgba(0,0,0,0.1); /* Sombra mais pronunciada */
+    max-height: 85vh;
+    overflow-y: auto; /* Scroll interno se o conteúdo for maior */
+    /* width: 90%;  Removido daqui, controlado pelo modal-container ou max-w-XX no HTML */
+    /* max-width: 600px;  Idealmente controlado por classes Tailwind no HTML (ex: max-w-xl, max-w-2xl) */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem; /* Tailwind: mb-4 */
+    padding-bottom: 0.75rem; /* Tailwind: pb-3 */
+    border-bottom: 1px solid var(--input-border); /* Usa variável de tema */
+}
+
+.modal-title {
+    font-size: 1.5rem; /* Tailwind: text-2xl */
+    font-weight: 600; /* Tailwind: font-semibold */
+    color: var(--text-primary); /* Usa variável de tema */
+}
+
+.modal-close-button {
+    background: none;
+    border: none;
+    color: var(--text-secondary); /* Usa variável de tema */
+    font-size: 1.75rem; /* Tamanho do 'x' */
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.25rem;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+.modal-close-button:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    margin-bottom: 1.5rem; /* Tailwind: mb-6, para dar espaço antes do footer */
+    font-size: 0.875rem; /* Tailwind: text-sm, para conteúdo de formulários */
+}
+
+.modal-footer {
+    display: flex;
+    gap: 0.75rem; /* Tailwind: space-x-3 se todos na mesma linha */
+    justify-content: flex-end; /* Alinha botões à direita por padrão */
+    padding-top: 1rem; /* py-4 */
+    border-top: 1px solid var(--input-border); /* Usa variável de tema */
+    margin-top: 1.5rem; /* mt-6 */
+}
+
+/* Ajuste para o modal de detalhes do site, conforme solicitado */
+.site-details-modal .modal-footer {
+    justify-content: space-between; /* "Excluir" à esquerda, outros à direita */
+    align-items: center;
+}
+
+/* Melhorias gerais para inputs e selects dentro dos modais */
+.modal-body label {
+    display: block;
+    margin-bottom: 0.25rem; /* Tailwind: mb-1 */
+    color: var(--text-primary);
+    font-weight: 500; /* Tailwind: font-medium */
+}
+.modal-body .edit-input, /* Reutiliza as classes que você já tem */
+.modal-body .edit-select,
+.modal-body .edit-textarea {
+    margin-top: 0.25rem; /* Tailwind: mt-1 */
+    margin-bottom: 1rem; /* Espaçamento padrão abaixo de cada input/select/textarea */
+}
+.modal-body .edit-input:last-child,
+.modal-body .edit-select:last-child,
+.modal-body .edit-textarea:last-child {
+    margin-bottom: 0; /* Remove margem do último elemento do formulário */
+}
+
+/* Estilos para Campos Personalizados (reutiliza sua classe, mas ajusta margens) */
+.custom-field-input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem; /* mb-3 */
+    align-items: center;
+}
+.custom-field-input-group input,
+.custom-field-input-group textarea {
+    flex-grow: 1;
+}
+.custom-field-input-group:last-child {
+    margin-bottom: 0; /* Remove margem do último grupo de campos personalizados */
+}
+
+/* Overlay de Carregamento */
+.loading-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.6); /* Um pouco mais escuro */
+    display: flex; justify-content: center; align-items: center;
+    z-index: 9999;
+    color: white; font-size: 1.5rem;
+}

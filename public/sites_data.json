@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fs_nunes_01",
+    "type": "server",
+    "serverCategory": "FILE_SERVER",
+    "title": "File Server Nunes",
+    "link": "5.78.104.121",
+    "login": "fs_nunes_login",
+    "password": "fs_nunes_password",
+    "showOnMural": true,
+    "customFields": [{"id": "cf_fsn1", "label": "Localização", "value": "Datacenter A", "fieldType":"text"}],
+    "isFixed": false,
+    "sites": [
+      {"id": "site_andrekussleiloes_org", "domainName": "andrekussleiloes.org", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_nunes_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net", "heracles.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_144", "customFields": [], "isEditing": false },
+      {"id": "site_gruposumare_com_br", "domainName": "gruposumare.com.br", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_nunes_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net", "heracles.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_144", "customFields": [], "isEditing": false },
+      {"id": "site_eventosmatrioska_com_br", "domainName": "eventosmatrioska.com.br", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_nunes_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net", "heracles.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_89", "customFields": [], "isEditing": false },
+      {"id": "site_grupokrefei_com_br", "domainName": "grupokrefei.com.br", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_nunes_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net", "heracles.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_89", "customFields": [], "isEditing": false },
+      {"id": "site_grupoub_com_br", "domainName": "grupoub.com.br", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_nunes_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net", "heracles.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_89", "customFields": [], "isEditing": false }
+    ]
+  },
+  {
+    "id": "fs_marques_01",
+    "type": "server",
+    "serverCategory": "FILE_SERVER",
+    "title": "File Server Marques",
+    "link": "5.78.107.150",
+    "login": "fs_marques_login",
+    "password": "fs_marques_password",
+    "showOnMural": true,
+    "customFields": [], "isFixed": false,
+    "sites": [
+      {"id": "site_coliseumleiloesoficial_com", "domainName": "coliseumleiloesoficial.com", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_148", "customFields": [], "isEditing": false },
+      {"id": "site_copartleiloeiro_com", "domainName": "copartleiloeiro.com", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_148", "customFields": [], "isEditing": false },
+      {"id": "site_freitafleiloes_org", "domainName": "freitafleiloes.org", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_148", "customFields": [], "isEditing": false },
+      {"id": "site_leilaodanielgarciaoficial_com", "domainName": "leilaodanielgarciaoficial.com", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_89", "customFields": [], "isEditing": false },
+      {"id": "site_leilaofavaretoficial_com", "domainName": "leilaofavaretoficial.com", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_148", "customFields": [], "isEditing": false },
+      {"id": "site_leiloesclaudiokuss_com", "domainName": "leiloesclaudiokuss.com", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_89", "customFields": [], "isEditing": false },
+      {"id": "site_leiloesguariglia_com", "domainName": "leiloesguariglia.com", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_148", "customFields": [], "isEditing": false },
+      {"id": "site_leilaosodresantoroficial_com", "domainName": "leilaosodresantoroficial.com", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_144", "customFields": [], "isEditing": false },
+      {"id": "site_montenegroleiloeiro_org", "domainName": "montenegroleiloeiro.org", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_144", "customFields": [], "isEditing": false },
+      {"id": "site_palaciodosleiloesoficial_com", "domainName": "palaciodosleiloesoficial.com", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_144", "customFields": [], "isEditing": false },
+      {"id": "site_parquedeleilao_com", "domainName": "parquedeleilao.com", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_144", "customFields": [], "isEditing": false },
+      {"id": "site_sumareleiloes_org", "domainName": "sumareleiloes.org", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_144", "customFields": [], "isEditing": false },
+      {"id": "site_trucadaoleiloes_site", "domainName": "trucadaoleiloes.site", "adminUser": "preencher", "adminPassword": "preencher", "associatedDbServerId": "db_marques_sites", "emailServiceProvider": "Pixel", "emailMxRecords": ["pixel.mxrouting.net"], "associatedReverseProxyId": "rp_escudo_144", "customFields": [], "isEditing": false }
+    ]
+  },
+  {
+    "id": "db_nunes_sites", "type": "server", "serverCategory": "DB_SERVER", "title": "BD para Sites Nunes",
+    "link": "5.78.132.182", "port": "3306", "login": "mysql_user_nunes", "password": "mysql_password_nunes",
+    "showOnMural": true,
+    "customFields": [{"id":"cf_dbn1", "label":"Tipo BD", "value":"MySQL", "fieldType":"text"}], "isFixed": false
+  },
+  {
+    "id": "db_marques_sites", "type": "server", "serverCategory": "DB_SERVER", "title": "BD para Sites Marques",
+    "link": "5.78.137.239", "port": "3306", "login": "mysql_user_marques", "password": "mysql_password_marques",
+    "showOnMural": true,
+    "customFields": [{"id":"cf_dbm1", "label":"Tipo BD", "value":"MySQL", "fieldType":"text"}], "isFixed": false
+  },
+  {
+    "id": "rp_escudo_144", "type": "server", "serverCategory": "REVERSE_PROXY_SERVER", "title": "Escudo/Proxy 144.217.161.17",
+    "showOnMural": false,
+    "link": "144.217.161.17", "login": "n/a", "password": "n/a", "customFields": [], "isFixed": false
+  },
+  {
+    "id": "rp_escudo_89", "type": "server", "serverCategory": "REVERSE_PROXY_SERVER", "title": "Escudo/Proxy 89.117.77.5",
+    "showOnMural": false,
+    "link": "89.117.77.5", "login": "n/a", "password": "n/a", "customFields": [], "isFixed": false
+  },
+  {
+    "id": "rp_escudo_148", "type": "server", "serverCategory": "REVERSE_PROXY_SERVER", "title": "Escudo/Proxy 148.113.200.14",
+    "showOnMural": false,
+    "link": "148.113.200.14", "login": "n/a", "password": "n/a", "customFields": [], "isFixed": false
+  },
+  {
+    "id": "bkp_server_01", "type": "server", "serverCategory": "BACKUP_SERVER", "title": "Servidor de Backup Principal",
+    "showOnMural": true,
+    "link": "backup.meudominio.com", "login": "user_bkp", "password": "password_bkp", "customFields": [], "isFixed": false
+  },
+  {
+    "id": "generic_server_01", "type": "server", "serverCategory": "GENERIC", "title": "Servidor Genérico Exemplo",
+    "showOnMural": false,
+    "link": "10.0.0.99", "login": "user_generic", "password": "pass_generic", "customFields": [], "isFixed": false
+  },
+  {
+    "id": "nota_geral_01",
+    "type": "other_info",
+    "title": "Lembrete Geral",
+    "items": [ {"id": "item_nota_g1", "label": "Pendente", "value": "Revisar documentação da API externa."} ],
+    "showOnMural": true,
+    "customFields": [], "isFixed": false
+  }
+]
