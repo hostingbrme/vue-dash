@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:local": "wrangler pages dev --local --port 8788 -- npm run dev",
+    "dev:cf": "wrangler pages dev --port 8788 -- npm run dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "wrangler:login": "wrangler auth login",
+    "wrangler:deploy": "npm run build && wrangler pages deploy dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",

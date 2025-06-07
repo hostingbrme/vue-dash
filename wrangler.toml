@@ -6,6 +6,7 @@ compatibility_date = "2025-06-01"
 [[kv_namespaces]]
 binding = "DB_KV"
 id = "1074ad7662614a2f953aaaf4fafca6df"
+preview_id = "fa674b4cf7514c4db2e0bec42319d3c9"
 
 # Removida ou comentada a seção [miniflare]
 # [miniflare]
